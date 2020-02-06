@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    class User
+    {
+        constructor(name,qq){
+            this.name=name;
+            this.qq=qq;
+        }
+        showName(){
+            alert(this.name)
+        }
+        showQQ(){
+            alert(this.qq)
+        }
+    }
+    class vipUser extends User{
+        constructor(name,qq,leave)
+        {
+            super(name,qq)
+            this.leave=leave
+        }
+        showLeave()
+        {
+            alert(this.leave)
+        }
+    }
+    // var ul=new User('blue','43252525')
+    // ul.showName()
+    // ul.showQQ()
+    var ul2=new vipUser('blue','43252525',1)
+    ul2.showName()
+    ul2.showQQ()
+    ul2.showLeave()
+    </script>
+</body>
+</html>

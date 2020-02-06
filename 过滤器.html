@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    // let arr=[12,34,22,36,88,44,66]
+    // let result=arr.filter(itme=>{
+    //     if(itme%3==0){
+    //         return true
+    //     }else{
+    //         return false
+    //     }
+        
+    // })
+    // alert(result)
+
+    let arr=[
+        {title:'女生包包', prise:'94397'},
+        {title:'男生', prise:'321'},
+        {title:'男生包包', prise:'321'},
+        {title:'女生鞋', prise:'23351'}
+    ]
+    let result=arr.filter(json=>json.prise>10000 )
+    console.log(result)
+    </script>
+</body>
+</html>
